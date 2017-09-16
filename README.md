@@ -1,2 +1,4 @@
-# IDP
-Fork of the IDP hybrid-seq alignment -- Apache 2.0 licensed -- Copyright 2014 Kin Fai Au
+IDP
+===
+
+IDP is an gene Isoform Detection and Prediction tool from Second Generation Sequencing and PacBio sequencing developed by Kin Fai Au. It offers very reliable gene isoform identification with high sensitivity.
