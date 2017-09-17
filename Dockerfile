@@ -38,8 +38,6 @@ RUN cd /Source \
 ## Include IDP
 RUN cd /Source \
     && git clone https://github.com/jason-weirather/IDP.git \
-    && cd /Source/IDP/example/Data \
-    && gunzip chr20.fa.gz \
     && pip install seq-tools
 ENV PATH="/Source/IDP/bin:${PATH}"
 
