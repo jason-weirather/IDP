@@ -38,7 +38,7 @@ RUN cd /Source \
 ## Include IDP
 RUN cd /Source \
     && git clone https://github.com/jason-weirather/IDP.git \
-    && pip install seq-tools==1.0.8
+    && pip install seq-tools==1.0.9
 ENV PATH="/Source/IDP/bin:${PATH}"
 
 ## Include hisat2 as a more modern short read aligner
