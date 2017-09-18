@@ -38,6 +38,7 @@ RUN cd /Source \
 ## Include IDP
 RUN cd /Source \
     && git clone https://github.com/jason-weirather/IDP.git \
+    && rm -r /Source/IDP/example \
     && pip install seq-tools==1.0.9
 ENV PATH="/Source/IDP/bin:${PATH}"
 
