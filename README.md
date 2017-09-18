@@ -7,6 +7,32 @@ This is a fork of the original IDP. I trained as a postdoc under the author Kin 
 
 https://www.healthcare.uiowa.edu/labs/au/IDP/
 
+
+## Whats in the Docker?
+
+The Docker contains more than just IDP, it has the whole IDP pipeline.
+
+#### Long read correction
+* `LSC`
+* `LoRDEC`
+
+#### Short read alignment
+* `hisat2` (good contemporary aligner)
+* `Bowtie` (for LSC)
+* `Bowtie2` (for SpliceMap)
+* `seqmap` (for SpliceMap and IDP primers)
+* `SpliceMap` (legacy aligner in the IDP pipeline)
+
+#### Long read alignment
+* `GMAP` for long read alignment
+
+#### Helper scripts
+* `seq-tools` for preparing long read names and short read alignments from hisat for use in IDP
+
+And of course `IDP` for isoform discovery.  
+
+The workflow here shows how to do a complete run with IDP and docker.
+
 ## How to run the complete IDP pipeline with docker
 ### (from long and short reads with a reference genome to isoforms)
 The pipeline is fairly involved but the `IDP/example/Data` folder provides a sufficient example to explain the pipline.
